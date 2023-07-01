@@ -10,7 +10,7 @@ passport.deserializeUser((id,cd)=>{
 passport.use(new GoogleStrategy({
     clientID: "439470601840-f7dksr947hthq1erc1hqlji7e078l0e9.apps.googleusercontent.com",
     clientSecret: "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",
-    callbackURL: "http://localhost:3000/login/google/redirect"
+    callbackURL: "https://oauth2-0-gm0h.onrender.com/login/google/redirect"
   },
   async function(accessToken, refreshToken, profile, cb) {
     console.log(profile);
