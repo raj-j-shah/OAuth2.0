@@ -65,6 +65,6 @@ app.get('/logout',(req,res)=>{
     req.logout();
     res.redirect("/");
 })
-app.listen(3000,()=>{
+app.listen(process.env.PORT || 3000,()=>{
     console.log("Server is running at 3000");
 })
